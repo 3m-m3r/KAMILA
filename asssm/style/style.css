@@ -7822,9 +7822,6 @@ section {
 }
 
 .cart table tbody .closeicon {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
   display: inline-flex;
   align-items: center;
   background-color: #222;
@@ -18632,8 +18629,6 @@ fieldset:disabled .btn {
 .justify-content-end {
   justify-content: flex-end !important;
 }
-
-
 
 .justify-content-between {
   justify-content: space-between !important;
