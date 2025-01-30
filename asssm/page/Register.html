@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+</head>
+
+<body>
+    <section class="auth-modal active">
+        <div class="auth-modal__form h-fit overflow-scroll">
+            <div class="wrapper h-fit">
+                <div class="auth-form">
+                    <button class="modal-logo"><a href="/" class="nuxt-link-active logo--symbol">
+
+                            mero
+                        </a>
+
+
+                    </button>
+                    <nav><button id="sign-in-box">
+                            Sign In
+                        </button> <button id="register-box" class="active">Register
+                        </button></nav>
+                    <div class="reg-form-wrapper" data-testid="login-form">
+
+
+
+                        <form class="form" data-hs-cf-bound="true"><span>
+
+
+                                <div class="input-placeholder flex align-items--center position--relative">
+
+                                    <!----> <!----> <input placeholder="Full Name" name="Full_name" type="text"
+                                        class="form__input">
+                                </div>
+
+
+                                <div class="input-placeholder flex align-items--center position--relative">
+                                    <!----> <!----> <input name="Email" placeholder="email" type="email"
+                                        class="form__input">
+                                </div>
+
+                                <div class="input-placeholder flex align-items--center position--relative">
+
+                                    <!----> <!----> <input placeholder="password" name="password" type="password"
+                                        class="form__input">
+                                </div>
+
+
+
+
+
+
+
+
+                                <div class="auth-form__footer"><button id="login-button" type="submit"
+                                        disabled="disabled"
+                                        class="btn btn--orange btn--lg btn--has-icon login-submit disabled">
+                                        Sign in
+                                        <i class="icon icon--angle"></i></button>
+                                    <div><span>Not a customer yet?</span>
+                                        <button> Register</button>
+                                    </div>
+                                </div>
+                        </form>
+                    </div> <!----> <!----> <!----> <!----> <!----> <!---->
+                </div> <!---->
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <style>
+        section.auth-modal.active {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+        }
+
+        .auth-modal__form.h-fit.overflow-scroll {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</body>
+
+</html>
