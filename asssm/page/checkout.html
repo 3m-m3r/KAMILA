@@ -5,99 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/theme.css">
+    <link rel="stylesheet" href="../style/mero.css">
 </head>
 
 <body>
 
+    <header id="header"></header>
+    <aside id="sidebar_left"></aside>
 
-
-
-
-    <section class="collections information">
-        <div>
-
-
-            <div class="_grid">
-                <div class="Data_">
-                    <div class="info-left">
-                        <h4 class="fw-semibold text-white text-center mb-4">08 Ton Excavator</h4>
-                        <div class="btns mb-4"><span
-                                class="bg-primary text-black">Information</span><span>Shipping</span><span>Payment</span>
-                        </div>
-                        <form>
-                            <div class="d-flex justify-content-between align-items-center mb-3"><span
-                                    class="fs-18 fw-medium text-white">Contact</span><span class="small-gray">Have an
-                                    account?</span></div><input class="form-control mb-3"
-                                placeholder="Enter Phone Number" type="number">
-                            <div class="form-floating mb-3"><select class="form-select" id="floatingSelect"
-                                    aria-label="Floating label select example">
-                                    <option value="1">USA</option>
-                                    <option value="2">UK</option>
-                                    <option value="3">Saudi Arabia</option>
-                                    <option value="3">Afganistan</option>
-                                </select><label for="floatingSelect">Country/Region</label></div>
-                            <div class="row g-3">
-                                <div class="col-md-6"><input class="form-control" placeholder="First Name (Optional)"
-                                        type="text"></div>
-                                <div class="col-md-6"><input class="form-control" placeholder="Last Name" type="text">
-                                </div>
-                                <div class="col-md-6"><input class="form-control" placeholder="Address" type="text">
-                                </div>
-                                <div class="col-md-6"><input class="form-control" placeholder="Apartment" type="text">
-                                </div>
-                                <div class="col-md-6"><input class="form-control" placeholder="City" type="text"></div>
-                                <div class="col-md-6"><input class="form-control" placeholder="Postal Code" type="text">
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check"><input class="form-check-input" id="flexCheckChecked"
-                                            type="checkbox" value=""><label class="form-check-label"
-                                            for="flexCheckChecked">Checked checkbox</label></div>
-                                </div>
-                                <div class="col-12 d-flex justify-content-center"><a
-                                        class="py-3 px-3 px-lg-5 bg-primary rounded-4 fw-semibold text-black"
-                                        href="shipping">Continue to shipping</a></div>
-                            </div>
-                        </form>
-                    </div>
+    <!--$-->
+    <div>
+        <section class="collections information">
+            <div class="container-fluid">
+                <div class="row">
+                    <nav class="col-12">
+                        <ul class="d-flex flex-wrap gap-2 mb-1 list-unstyled align-items-center mb-0 ps-3">
+                            <li><a href="/">Home</a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-narrow-right">
+                                    <path d="M5 12l14 0"></path>
+                                    <path d="M15 16l4 -4"></path>
+                                    <path d="M15 8l4 4"></path>
+                                </svg></li>
+                            <li><a href="collection">Our Collection</a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-narrow-right">
+                                    <path d="M5 12l14 0"></path>
+                                    <path d="M15 16l4 -4"></path>
+                                    <path d="M15 8l4 4"></path>
+                                </svg></li>
+                            <li><a href="product-details">Product Details</a></li>
+                            <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-narrow-right">
+                                    <path d="M5 12l14 0"></path>
+                                    <path d="M15 16l4 -4"></path>
+                                    <path d="M15 8l4 4"></path>
+                                </svg></li>
+                            <li><a class="text-white" href="#">Cart Information</a></li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <div class="bg">
-                    <div class="_price">
+                <div class="row g-4 pt-3 pb-4">
+                    <div class="col-lg-7 col-xxl-6 offset-xxl-1">
+                        <div class="info-left">
+                            <h4 class="fw-semibold text-white text-center mb-4">08 Ton Excavator</h4>
+                            <div class="btns mb-4"><span
+                                    class="bg-primary text-black">Information</span><span>Shipping</span><span>Payment</span>
+                            </div>
+                            <form>
+                                <div class="d-flex justify-content-between align-items-center mb-3"><span
+                                        class="fs-18 fw-medium text-white">Contact</span><span class="small-gray">Have
+                                        an account?</span></div><input type="number" class="form-control mb-3"
+                                    placeholder="Enter Phone Number" />
+                                <div class="form-floating mb-3"><select class="form-select" id="floatingSelect"
+                                        aria-label="Floating label select example">
+                                        <option value="1">USA</option>
+                                        <option value="2">UK</option>
+                                        <option value="3">Saudi Arabia</option>
+                                        <option value="3">Afganistan</option>
+                                    </select><label for="floatingSelect">Country/Region</label></div>
+                                <div class="row g-3">
+                                    <div class="col-md-6"><input type="text" class="form-control"
+                                            placeholder="First Name (Optional)" /></div>
+                                    <div class="col-md-6"><input type="text" class="form-control"
+                                            placeholder="Last Name" /></div>
+                                    <div class="col-md-6"><input type="text" class="form-control"
+                                            placeholder="Address" /></div>
+                                    <div class="col-md-6"><input type="text" class="form-control"
+                                            placeholder="Apartment" /></div>
+                                    <div class="col-md-6"><input type="text" class="form-control" placeholder="City" />
+                                    </div>
+                                    <div class="col-md-6"><input type="text" class="form-control"
+                                            placeholder="Postal Code" /></div>
+                                    <div class="col-12">
+                                        <div class="form-check"><input class="form-check-input" type="checkbox"
+                                                id="flexCheckChecked" value="" /><label class="form-check-label"
+                                                for="flexCheckChecked">Checked checkbox</label></div>
+                                    </div>
+                                    <div class="col-12 d-flex justify-content-center"><a
+                                            class="py-3 px-3 px-lg-5 bg-primary rounded-4 fw-semibold text-black"
+                                            href="shipping">Continue to shipping</a></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xxl-4">
                         <div class="order-summery info-right">
                             <div
                                 class="d-flex justify-content-between mb-3 align-items-center flex-wrap flex-sm-nowrap gap-2">
                                 <div class="d-flex align-items-center gap-3">
                                     <div class="order-img"><img alt="" loading="lazy" width="86" height="82"
-                                            decoding="async" data-nimg="1" src="../img/img.webp"
-                                            style="color: transparent;"><span class="fw-medium">01</span></div>
+                                            decoding="async" data-nimg="1" style="color:transparent"
+                                            src="../img/collection-1.png" /><span class="fw-medium">01</span></div>
                                     <div>
                                         <h4 class="text-white fw-bold">08 Ton Excavator</h4><span>Thoesen Tractor</span>
                                     </div>
                                 </div><span class="right-white">$110.37050</span>
                             </div>
-
-
-                            <div
-                                class="d-flex justify-content-between mb-3 align-items-center flex-wrap flex-sm-nowrap gap-2">
-                                <div class="d-flex align-items-center gap-3">
-                                    <div class="order-img"><img alt="" loading="lazy" width="86" height="82"
-                                            decoding="async" data-nimg="1" src="../img/img.webp"
-                                            style="color: transparent;"><span class="fw-medium">01</span></div>
-                                    <div>
-                                        <h4 class="text-white fw-bold">08 Ton Excavator</h4><span>Thoesen Tractor</span>
-                                    </div>
-                                </div><span class="right-white">$110.37050</span>
-                            </div>
-
-
-                            <h5 class="fw-semibold mb-1"><span class="text-white" style="color: white !important;">Order
-                                    Summary</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"
-                                    class="tabler-icon tabler-icon-info-octagon">
+                            <h5 class="fw-semibold mb-1"><span class="text-white">Order Summary</span> <svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="tabler-icon tabler-icon-info-octagon">
                                     <path
                                         d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z">
                                     </path>
@@ -105,8 +116,8 @@
                                     <path d="M11 12h1v4h1"></path>
                                 </svg></h5>
                             <div class="d-flex justify-content-between align-items-center mb-1"><span
-                                    class="small-gray">08
-                                    Ton Excavator</span><span class="right-white">$110.37050</span></div>
+                                    class="small-gray">08 Ton Excavator</span><span
+                                    class="right-white">$110.37050</span></div>
                             <p class="small-gray">$569.00/d $1,567.00/w $4,702.00/4w</p>
                             <div class="d-flex justify-content-between align-items-center mb-1"><span
                                     class="small-gray">Delivery</span><span class="right-white">$250.00</span></div>
@@ -133,103 +144,41 @@
                             <div class="d-flex justify-content-between align-items-center mb-1 mt-3"><span
                                     class="right-white">Total (Due on checkout)</span><span
                                     class="right-white">$65,73.705</span></div>
-                            <!-- <p class="small-gray mb-1">Order #LJRKV25</p>
-                            <p class="text-primary mb-0">Full address required to <br> complete reservation.</p>
+                            <p class="small-gray mb-1">Order #LJRKV25</p>
+                            <p class="text-primary mb-0">Full address required to <br /> complete reservation.</p>
                             <p class="text-white">ExcavaHire US accepts following payment methods:</p>
-                            <div class="d-flex flex-wrap gap-3">
+                            <!-- <div class="d-flex flex-wrap gap-3">
                                 <div class="payment-img-card"><img alt="" loading="lazy" width="43" height="12"
-                                        decoding="async" data-nimg="1"
-                                        srcset="/_next/image?url=%2Fimages%2Fvisa.png&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fvisa.png&amp;w=96&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fvisa.png&amp;w=96&amp;q=75"
-                                        style="color: transparent;"></div>
+                                        decoding="async" data-nimg="1" style="color:transparent"
+                                        srcSet="/_next/image?url=%2Fimages%2Fvisa.png&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fvisa.png&amp;w=96&amp;q=75 2x"
+                                        src="/_next/image?url=%2Fimages%2Fvisa.png&amp;w=96&amp;q=75" /></div>
                                 <div class="payment-img-card"><img alt="" loading="lazy" width="34" height="20"
-                                        decoding="async" data-nimg="1"
-                                        srcset="/_next/image?url=%2Fimages%2Fmastercard.png&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fmastercard.png&amp;w=96&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fmastercard.png&amp;w=96&amp;q=75"
-                                        style="color: transparent;"></div>
+                                        decoding="async" data-nimg="1" style="color:transparent"
+                                        srcSet="/_next/image?url=%2Fimages%2Fmastercard.png&amp;w=48&amp;q=75 1x, /_next/image?url=%2Fimages%2Fmastercard.png&amp;w=96&amp;q=75 2x"
+                                        src="/_next/image?url=%2Fimages%2Fmastercard.png&amp;w=96&amp;q=75" /></div>
                                 <div class="payment-img-card"><img alt="" loading="lazy" width="101" height="21"
-                                        decoding="async" data-nimg="1"
-                                        srcset="/_next/image?url=%2Fimages%2Fverifone.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fimages%2Fverifone.png&amp;w=256&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fverifone.png&amp;w=256&amp;q=75"
-                                        style="color: transparent;"></div>
+                                        decoding="async" data-nimg="1" style="color:transparent"
+                                        srcSet="/_next/image?url=%2Fimages%2Fverifone.png&amp;w=128&amp;q=75 1x, /_next/image?url=%2Fimages%2Fverifone.png&amp;w=256&amp;q=75 2x"
+                                        src="/_next/image?url=%2Fimages%2Fverifone.png&amp;w=256&amp;q=75" /></div>
                                 <div class="payment-img-card"><img alt="" loading="lazy" width="90" height="21"
-                                        decoding="async" data-nimg="1"
-                                        srcset="/_next/image?url=%2Fimages%2Fdiscover.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdiscover.png&amp;w=256&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fdiscover.png&amp;w=256&amp;q=75"
-                                        style="color: transparent;"></div>
+                                        decoding="async" data-nimg="1" style="color:transparent"
+                                        srcSet="/_next/image?url=%2Fimages%2Fdiscover.png&amp;w=96&amp;q=75 1x, /_next/image?url=%2Fimages%2Fdiscover.png&amp;w=256&amp;q=75 2x"
+                                        src="/_next/image?url=%2Fimages%2Fdiscover.png&amp;w=256&amp;q=75" /></div>
                                 <div class="payment-img-card"><img alt="" loading="lazy" width="51" height="21"
-                                        decoding="async" data-nimg="1"
-                                        srcset="/_next/image?url=%2Fimages%2Fapple-pay.png&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fapple-pay.png&amp;w=128&amp;q=75 2x"
-                                        src="/_next/image?url=%2Fimages%2Fapple-pay.png&amp;w=128&amp;q=75"
-                                        style="color: transparent;"></div>
+                                        decoding="async" data-nimg="1" style="color:transparent"
+                                        srcSet="/_next/image?url=%2Fimages%2Fapple-pay.png&amp;w=64&amp;q=75 1x, /_next/image?url=%2Fimages%2Fapple-pay.png&amp;w=128&amp;q=75 2x"
+                                        src="/_next/image?url=%2Fimages%2Fapple-pay.png&amp;w=128&amp;q=75" /></div>
                             </div> -->
                         </div>
                     </div>
                 </div>
-
             </div>
-        </div>
-    </section>
+        </section>
+    </div><!--/$-->
 
+    <aside id="bottom_bar"></aside>
 
-
-    <style>
-        ._grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 10px;
-
-        }
-
-        section.collections.information {
-            background: var(--color-bg);
-        }
-
-        body {
-            background: var(--color-bg);
-        }
-
-        .order-summery.info-right {
-            background: var(--color-primary);
-            color: white;
-        }
-
-        .small-gray,
-        .right-white {
-            color: white !important;
-        }
-
-        .bg {
-            height: 100vh;
-            background: var(--color-primary);
-        }
-
-        .Data_,
-        .bg {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        h5.fw-semibold.mb-1 {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            color: white;
-        }
-
-        @media screen and (max-width:992px) {
-            ._grid {
-                display: block;
-            }
-
-            .btns.mb-4 {
-                display: none !important;
-
-            }
-
-        }
-    </style>
+    <script src="../script/app.js"></script>
 
 
 </body>

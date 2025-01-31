@@ -1,165 +1,613 @@
 let header = document.getElementById("header");
 
 let header_div = `
-        <header data-fetch-key="AppHeader:0" class="header">
-                    <div class="container">
-                        <div class="header-wrapper">
-                            <div class="main-logo"><span><a href="#" class="nuxt-link-active">
+    <header class="d-none d-lg-flex header position-fixed w-100 justify-content-between">
+
+        <div class="d-flex align-items-center gap-4 logo"><a href="/"><img alt="" loading="lazy" width="198" height="48"
+                    decoding="async" data-nimg="1" class="d-none d-sm-block" style="color:transparent"
+                    src="../img/logo.webp" /><img alt="" loading="lazy" width="64" height="64" decoding="async"
+                    data-nimg="1" class="d-sm-none" style="color:transparent"
+                    src="/_next/image?url=%2Fimages%2Flogo-icon.png&amp;w=128&amp;q=75" /></a>
+            <form class="align-items-center gap-1 d-none d-xl-flex"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round" class="fs-5">
+                    <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                    <path d="M21 21l-6 -6"></path>
+                </svg><input type="text" placeholder="Search..." class="bg-transparent border-0" /></form>
 
 
-
-                                        <strong>
-                                            KAMILA
-                                        </strong>
-                                    </a></span></div>
-                            <div class="flex">
-                                <div data-fetch-key="Navigation:0" class="menu-wrapper-nav"><button
-                                        class="btn btn--categories header-search">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                            viewBox="0 0 20 20" fill="none">
-                                            <script xmlns="" />
-                                            <g id="Media / Icon/Unfilled/view-grid">
-                                                <g id="Icon">
-                                                    <path
-                                                        d="M3 4.75C3 3.7835 3.7835 3 4.75 3H6.5C7.4665 3 8.25 3.7835 8.25 4.75V6.5C8.25 7.4665 7.4665 8.25 6.5 8.25H4.75C3.7835 8.25 3 7.4665 3 6.5V4.75Z"
-                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11.75 4.75C11.75 3.7835 12.5335 3 13.5 3H15.25C16.2165 3 17 3.7835 17 4.75V6.5C17 7.4665 16.2165 8.25 15.25 8.25H13.5C12.5335 8.25 11.75 7.4665 11.75 6.5V4.75Z"
-                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M3 13.5C3 12.5335 3.7835 11.75 4.75 11.75H6.5C7.4665 11.75 8.25 12.5335 8.25 13.5V15.25C8.25 16.2165 7.4665 17 6.5 17H4.75C3.7835 17 3 16.2165 3 15.25V13.5Z"
-                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                    <path
-                                                        d="M11.75 13.5C11.75 12.5335 12.5335 11.75 13.5 11.75H15.25C16.2165 11.75 17 12.5335 17 13.5V15.25C17 16.2165 16.2165 17 15.25 17H13.5C12.5335 17 11.75 16.2165 11.75 15.25V13.5Z"
-                                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
-                                                        stroke-linejoin="round" />
-                                                </g>
-                                            </g>
-                                            <script xmlns="" />
-                                            <script xmlns="" />
-                                        </svg>
+        </div>
 
 
-                                        <b>All products</b></button>
+        <div class="d-flex align-items-center">
+            <div class="gap-3 pe-3 d-none d-4xl-flex"></div>
+            <a
+                class="cart d-flex align-items-center gap-2 border-0 fs-4" href="#"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-shopping-cart-plus">
+                    <path d="M4 19a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                    <path d="M12.5 17h-6.5v-14h-2"></path>
+                    <path d="M6 5l14 1l-.86 6.017m-2.64 .983h-10.5"></path>
+                    <path d="M16 19h6"></path>
+                    <path d="M19 16v6"></path>
+                </svg><span>2</span></a><a class="list text-uppercase border-0 font-medium d-none d-md-block"
+                href="equipment">list your equipment</a>
 
-                                </div>
 
+            <a class="collection text-uppercase border-0 d-none d-md-flex align-items-center gap-2 font-medium"
+                href="collection"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="fs-4">
+                    <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                    <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                    <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                    <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                </svg> our collection</a>
 
-
-
-
-                                <!--  -->
-                                <div class="search-section">
-                                    <div class="search-wrapper">
-                                        <div class="form">
-                                            <div class="toggle-button-cover">
-                                                <div class="knob knob-selected"><span>Buy</span></div>
-                                                <div class="knob"><span>Rent</span></div>
-                                            </div>
-                                            <div class="form__input-placeholder"><input autocomplete="off" type="search"
-                                                    name="search" placeholder="Search by brands, model, ref. no..."
-                                                    value="" class="form__input"></div> <button aria-label="clear"
-                                                class="clear clear-desktop"><!----></button> 
-                                        </div>
-                                    </div> <button aria-label="Search" class="search-cta mobile-cta"><i
-                                            class="icon icon--search"></i></button> <!---->
-                                </div>
-                            </div>
-
-                            <div class="flex profile-wrapper desktop-only">
+            <button id="addClass"
+                class="list text-uppercase nav__bar border-0 d-flex flex-column align-items-center justify-content-center"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fs-3">
+                    <path d="M4 6h16"></path>
+                    <path d="M7 12h13"></path>
+                    <path d="M10 18h10"></path>
+                </svg><span>Menu</span></button>
+        </div>
+    </header>
 
 
 
 
-                                <div class="header__cta-placeholder header-cart cart">
-                                    <div class="btn btn--round-outline-disabled" style="background-color:transparent;">
 
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                            viewBox="0 0 32 32" fill="none">
-                                            <script xmlns="" />
-                                            <path
-                                                d="M1.33331 3.33334H3.98756C4.46595 3.33334 4.70514 3.33334 4.89959 3.42008C5.07102 3.49655 5.21746 3.61972 5.32217 3.77551C5.44094 3.95223 5.48193 4.18788 5.5639 4.6592L6.14491 8.00001M6.14491 8.00001L7.49171 15.7441C7.67089 16.7744 7.76047 17.2895 8.02581 17.6606C8.25943 17.9874 8.58604 18.2362 8.96309 18.3747C9.3913 18.532 9.91174 18.4817 10.9526 18.3809L25.7749 16.9465C26.7962 16.8477 27.3069 16.7983 27.6928 16.5676C28.0327 16.3644 28.3047 16.0648 28.4742 15.7069C28.6666 15.3005 28.6666 14.7875 28.6666 13.7614V11.7734C28.6666 10.6828 28.6666 10.1376 28.4566 9.71623C28.2719 9.34545 27.9765 9.04121 27.6113 8.84553C27.1964 8.62316 26.6514 8.60702 25.5613 8.57476L6.14491 8.00001Z"
-                                                stroke="#132528" stroke-width="1.5" stroke-linecap="round"
-                                                stroke-linejoin="round" />
-                                            <ellipse cx="11.3334" cy="25.3333" rx="2.66667" ry="2.66667"
-                                                stroke="#132528" stroke-width="1.5" />
-                                            <ellipse cx="24" cy="25.3333" rx="2.66667" ry="2.66667" stroke="#132528"
-                                                stroke-width="1.5" />
-                                            <script xmlns="" />
-                                            <script xmlns="" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <div class="user-comp">
-                                    <div><button aria-label="MyAccount" class="sign-in-btn"><svg width="22" height="28"
-                                                viewBox="0 0 22 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M16.0001 6C16.0001 8.76142 13.7615 11 11.0001 11C8.23865 11 6.00007 8.76142 6.00007 6C6.00007 3.23858 8.23865 1 11.0001 1C13.7615 1 16.0001 3.23858 16.0001 6Z"
-                                                    stroke="#1D262A" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                                <path
-                                                    d="M1.00159 24.8243C1.09533 19.3825 5.5359 15 11.0001 15C16.4644 15 20.905 19.3827 20.9986 24.8247C17.9548 26.2214 14.5686 27 11.0005 27C7.43207 27 4.04553 26.2212 1.00159 24.8243Z"
-                                                    stroke="#1D262A" stroke-width="1.5" stroke-linecap="round"
-                                                    stroke-linejoin="round"></path>
-                                            </svg></button></div>
-                                </div>
-                            </div>
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="mobile-menu">
+        
+        <a class="active" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="tabler-icon tabler-icon-home">
+                <path d="M5 12l-2 0l9 -9l9 9l-2 0"></path>
+                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+            </svg><span>Home</span></a>
+            <a href="cart"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" class="tabler-icon tabler-icon-shopping-cart">
+                <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                <path d="M17 17h-11v-14h-2"></path>
+                <path d="M6 5l14 1l-1 7h-13"></path>
+            </svg><span>Cart</span></a><a href="collection"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-layout-grid">
+                <path d="M4 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                <path d="M14 4m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                <path d="M4 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+                <path d="M14 14m0 1a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v4a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z"></path>
+            </svg><span>Collections</span></a><a id="nav__bar" class="nav__bar" href="#"><svg
+                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="tabler-icon tabler-icon-menu-2">
+                <path d="M4 6l16 0"></path>
+                <path d="M4 12l16 0"></path>
+                <path d="M4 18l16 0"></path>
+            </svg><span>Menu</span></a></nav>
+
+
+
+
+
+    <div class="mobile-search d-lg-none" id="open_manue">
+      <div
+        class="content"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="tabler-icon tabler-icon-search"
+        >
+          <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+          <path d="M21 21l-6 -6"></path>
+        </svg>
+        <div class="flex-grow-1">
+          <h6>Choose Machine</h6>
+          <span>Category • Type • Location</span>
+        </div>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="tabler-icon tabler-icon-adjustments-horizontal"
+        >
+          <path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M4 6l8 0"></path>
+          <path d="M16 6l4 0"></path>
+          <path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M4 12l2 0"></path>
+          <path d="M10 12l10 0"></path>
+          <path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M4 18l11 0"></path>
+          <path d="M19 18l1 0"></path>
+        </svg>
+      </div>
+
+      <div
+        class="modal fade show"
+        id="exampleModal"
+        tabindex="-1"
+        aria-modal="true"
+        role="dialog"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header border-0">
+              <button
+                id="close_manue"
+                type="button"
+                class="text-white border-0 bg-transparent"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="tabler-icon tabler-icon-x"
+                >
+                  <path d="M18 6l-12 12"></path>
+                  <path d="M6 6l12 12"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="inner flex-column">
+                <div class="select-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-backhoe"
+                  >
+                    <path d="M4 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M13 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+                    <path d="M13 19l-9 0"></path>
+                    <path d="M4 15l9 0"></path>
+                    <path d="M8 12v-5h2a3 3 0 0 1 3 3v5"></path>
+                    <path d="M5 15v-2a1 1 0 0 1 1 -1h7"></path>
+                    <path d="M21.12 9.88l-3.12 -4.88l-5 5"></path>
+                    <path
+                      d="M21.12 9.88a3 3 0 0 1 -2.12 5.12a3 3 0 0 1 -2.12 -.88l4.24 -4.24z"
+                    ></path>
+                  </svg>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <!--$--><!--/$-->
+                      <div class="position-relative">
+                        <div>
+                          <button
+                            class="heading-input"
+                            id="headlessui-listbox-button-:r17:"
+                            type="button"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            data-headlessui-state=""
+                          >
+                            <span>Select Category</span>
+                          </button>
                         </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="tabler-icon tabler-icon-selector"
+                      >
+                        <path d="M8 9l4 -4l4 4"></path>
+                        <path d="M16 15l-4 4l-4 -4"></path>
+                      </svg>
                     </div>
-
-
-
-                    <div class="menu-bar" data-v-4db352b3="">
-                        <div data-v-4db352b3="">
-                            <nav class="hero-banner" data-v-4db352b3="">
-                                <ul class="banner-container" data-v-4db352b3="">
-                                    <li data-v-4db352b3=""><a href="/c/equipment-rent"
-                                            class="hero-banner-title nuxt-link-exact-active nuxt-link-active"
-                                            data-v-4db352b3="" aria-current="page">
-                                            For rent
-                                        </a></li>
-                                    <li class="with-submenu" data-v-4db352b3="">
-                                        New for sale
-                                        <span data-v-4db352b3=""><i class="down-arrow icon icon--angle-bold-down"
-                                                data-v-4db352b3=""></i></span>
-
-                                    </li>
-                                    <li data-v-4db352b3=""><a
-                                            href="/c/equipment-buy?condition=620&amp;condition=621&amp;sort=POSITION"
-                                            class="hero-banner-title" data-v-4db352b3="">
-                                            Used for sale
-                                        </a></li>
-                                    <li data-v-4db352b3=""><a href="/c/attachment-buy?sort=POSITION"
-                                            class="hero-banner-title" data-v-4db352b3="">
-                                            Attachments
-                                        </a></li>
-                                    <li class="with-submenu w-auto" data-v-4db352b3=""><span data-v-4db352b3="">
-                                            Brands&nbsp;
-                                            <i class="down-arrow ltr:ml-1.5 rtl:mr-1.5 icon icon--angle-bold-down"
-                                                data-v-4db352b3=""></i></span>
-
-                                    </li>
-                                    <li class="with-submenu more-drop desktop-only" data-v-4db352b3="">
-                                        More
-                                        <span data-v-4db352b3=""><i class="down-arrow icon icon--angle-bold-down"
-                                                data-v-4db352b3=""></i></span>
-
-
-                                    </li>
-                                </ul>
-
-                            </nav>
-
-
+                    <p>Select Your Category</p>
+                  </div>
+                </div>
+                <div class="select-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-bulldozer"
+                  >
+                    <path d="M2 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                    <path d="M12 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                    <path d="M19 13v4a2 2 0 0 0 2 2h1"></path>
+                    <path d="M14 19h-10"></path>
+                    <path d="M4 15h10"></path>
+                    <path d="M9 11v-5h2a3 3 0 0 1 3 3v6"></path>
+                    <path d="M5 15v-3a1 1 0 0 1 1 -1h8"></path>
+                    <path d="M19 17h-3"></path>
+                  </svg>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <!--$--><!--/$-->
+                      <div class="position-relative">
+                        <div>
+                          <button
+                            class="heading-input"
+                            id="headlessui-listbox-button-:r18:"
+                            type="button"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            data-headlessui-state=""
+                          >
+                            <span>Equipment Name</span>
+                          </button>
                         </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="tabler-icon tabler-icon-selector"
+                      >
+                        <path d="M8 9l4 -4l4 4"></path>
+                        <path d="M16 15l-4 4l-4 -4"></path>
+                      </svg>
                     </div>
+                    <p>Select Your Equipment</p>
+                  </div>
+                </div>
+                <div class="select-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-map-pin-filled"
+                  >
+                    <path
+                      d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                      fill="currentColor"
+                      stroke-width="0"
+                    ></path>
+                  </svg>
+                  <div class="flex-grow-1">
+                    <div class="d-flex justify-content-between">
+                      <!--$--><!--/$-->
+                      <div class="position-relative">
+                        <div>
+                          <button
+                            class="heading-input"
+                            id="headlessui-listbox-button-:r19:"
+                            type="button"
+                            aria-haspopup="listbox"
+                            aria-expanded="false"
+                            data-headlessui-state=""
+                          >
+                            <span>Your Location</span>
+                          </button>
+                        </div>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class="tabler-icon tabler-icon-selector"
+                      >
+                        <path d="M8 9l4 -4l4 4"></path>
+                        <path d="M16 15l-4 4l-4 -4"></path>
+                      </svg>
+                    </div>
+                    <p>Select Your Location</p>
+                  </div>
+                </div>
+                <div class="select-box">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-calendar-due"
+                  >
+                    <path
+                      d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"
+                    ></path>
+                    <path d="M16 3v4"></path>
+                    <path d="M8 3v4"></path>
+                    <path d="M4 11h16"></path>
+                    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                  </svg>
+                  <div class="flex-grow-1">
+                    <input
+                      class="bg-transparent w-100 border-0 text-white picker"
+                      type="date"
+                    />
+                    <p>Select Your Date</p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
-                </header>
+        <div class="nav__items-wrapper " id="navWrapper">
+        <div class="nav__items">
+            <div class="nav__items-head d-flex align-items-center justify-content-between"><a class="nav__item "
+                    href="/"><img alt="" loading="lazy" width="198" height="48" decoding="async" data-nimg="1"
+                        style="color:transparent"
+                        srcSet="/_next/image?url=%2Fimages%2Flogo.png&amp;w=256&amp;q=75 1x, /_next/image?url=%2Fimages%2Flogo.png&amp;w=640&amp;q=75 2x"
+                        src="/_next/image?url=%2Fimages%2Flogo.png&amp;w=640&amp;q=75" /></a><button
+                    class="nav__close border-0 " id="removeClass"><i class="close icon"></i></button></div>
+            <ul class="list-unstyled">
+                <li><a class="nav__item  " href="/">Home</a></li>
+                <li><a class="nav__item  " href="/landing">Landing Page</a></li>
+                <li><a class="nav__item  " href="/about">About</a></li>
+                <li><a class="nav__item  " href="/contact">contact</a></li>
+                <li><a class="nav__item  " href="/services">Services</a></li>
+                <li><a class="nav__item  " href="/services-details">Service Details</a></li>
+                <li><a class="nav__item  " href="/information">Cart Info</a></li>
+                <li><a class="nav__item  " href="/shipping">Shipping Details</a></li>
+                <li><a class="nav__item  " href="/payment">Payment</a></li>
+                <li><a class="nav__item active " href="/order-complete">Payment Success</a></li>
+                <li><a class="nav__item  " href="/result">Search Result</a></li>
+                <li><a class="nav__item  " href="/terms">Terms Of Service</a></li>
+                <li><a class="nav__item  " href="/error">Not Found</a></li>
+            </ul>
+        </div>
+    </div>
+
 
 `;
 
 header.innerHTML = header_div;
+
+let sidebar_left = document.getElementById("sidebar_left");
+
+let sidebar_left_ = `
+    <div class="sidebar d-none d-lg-flex flex-column justify-content-end align-items-center">
+        <div class="vline"></div>
+        <ul class="social list-unstyled">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="tabler-icon tabler-icon-brand-facebook">
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                    </svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="tabler-icon tabler-icon-brand-instagram">
+                        <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M16.5 7.5l0 .01"></path>
+                    </svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="tabler-icon tabler-icon-brand-discord">
+                        <path d="M8 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                        <path d="M14 12a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                        <path
+                            d="M15.5 17c0 1 1.5 3 2 3c1.5 0 2.833 -1.667 3.5 -3c.667 -1.667 .5 -5.833 -1.5 -11.5c-1.457 -1.015 -3 -1.34 -4.5 -1.5l-.972 1.923a11.913 11.913 0 0 0 -4.053 0l-.975 -1.923c-1.5 .16 -3.043 .485 -4.5 1.5c-2 5.667 -2.167 9.833 -1.5 11.5c.667 1.333 2 3 3.5 3c.5 0 2 -2 2 -3">
+                        </path>
+                        <path d="M7 16.5c3.5 1 6.5 1 10 0"></path>
+                    </svg></a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" class="tabler-icon tabler-icon-brand-wikipedia">
+                        <path d="M3 4.984h2"></path>
+                        <path d="M8 4.984h2.5"></path>
+                        <path d="M14.5 4.984h2.5"></path>
+                        <path d="M22 4.984h-2"></path>
+                        <path d="M4 4.984l5.455 14.516l6.545 -14.516"></path>
+                        <path d="M9 4.984l6 14.516l6 -14.516"></path>
+                    </svg></a></li>
+        </ul>
+        <div class="vline"></div>
+        <div class="position-relative">
+            <div class="d-flex flex-column"><button id="plusbtn" class="plus bg-primary fs-5"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="tabler-icon tabler-icon-plus">
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg></button><button id="sharebtn" class="share text-primary"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="tabler-icon tabler-icon-share">
+                        <path d="M6 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M18 6m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M18 18m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M8.7 10.7l6.6 -3.4"></path>
+                        <path d="M8.7 13.3l6.6 3.4"></path>
+                    </svg></button></div>
+
+        </div>
+    </div>
+`;
+
+sidebar_left.innerHTML = sidebar_left_;
+
+let bottom_bar = document.getElementById("bottom_bar");
+
+let bottom_bar_ = `
+    <div class="bottom-bar">
+        <form class="inner">
+            <div class="select-box">
+
+                <div class="flex-grow-1"><!--$-->
+                    <div class="position-relative">
+                        <div><button class="input" id="headlessui-listbox-button-:Rphra:" type="button"
+                                aria-haspopup="listbox" aria-expanded="false" data-headlessui-state=""><span>Select
+                                    Category</span></button></div>
+                    </div><!--/$-->
+                    <p>Select Your Category</p>
+                </div>
+            </div>
+
+            <div class="select-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-bulldozer">
+                    <path d="M2 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                    <path d="M12 17a2 2 0 1 0 4 0a2 2 0 0 0 -4 0"></path>
+                    <path d="M19 13v4a2 2 0 0 0 2 2h1"></path>
+                    <path d="M14 19h-10"></path>
+                    <path d="M4 15h10"></path>
+                    <path d="M9 11v-5h2a3 3 0 0 1 3 3v6"></path>
+                    <path d="M5 15v-3a1 1 0 0 1 1 -1h8"></path>
+                    <path d="M19 17h-3"></path>
+                </svg>
+                <div class="flex-grow-1"><!--$-->
+                    <div class="position-relative">
+                        <div><button class="input" id="headlessui-listbox-button-:Rpira:" type="button"
+                                aria-haspopup="listbox" aria-expanded="false" data-headlessui-state=""><span>Equipment
+                                    Name</span></button></div>
+                    </div><!--/$-->
+                    <p>Select Your Equipment</p>
+                </div>
+            </div>
+            <div class="select-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-map-pin-filled">
+                    <path
+                        d="M18.364 4.636a9 9 0 0 1 .203 12.519l-.203 .21l-4.243 4.242a3 3 0 0 1 -4.097 .135l-.144 -.135l-4.244 -4.243a9 9 0 0 1 12.728 -12.728zm-6.364 3.364a3 3 0 1 0 0 6a3 3 0 0 0 0 -6z"
+                        fill="currentColor" stroke-width="0"></path>
+                </svg>
+                <div class="flex-grow-1"><!--$-->
+                    <div class="position-relative">
+                        <div><button class="input" id="headlessui-listbox-button-:Rpjra:" type="button"
+                                aria-haspopup="listbox" aria-expanded="false" data-headlessui-state=""><span>Your
+                                    Location</span></button></div>
+                    </div><!--/$-->
+                    <p>Select Your Location</p>
+                </div>
+            </div>
+            <div class="select-box"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="tabler-icon tabler-icon-calendar-due">
+                    <path d="M4 5m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M16 3v4"></path>
+                    <path d="M8 3v4"></path>
+                    <path d="M4 11h16"></path>
+                    <path d="M12 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
+                </svg>
+                <div class="flex-grow-1">
+                    <div class="react-datepicker-wrapper">
+                        <div class="react-datepicker__input-container"><input type="text" class=""
+                                value="11/09/2023 - 11/09/2023" /></div>
+                    </div>
+                    <p>Select Your Date</p>
+                </div>
+            </div>
+            <div class="search-btn-area"><a class="search-btn" href="result"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-search">
+                        <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0"></path>
+                        <path d="M21 21l-6 -6"></path>
+                    </svg></a></div>
+        </form>
+    </div>
+
+
+`;
+
+bottom_bar.innerHTML = bottom_bar_;
+
+let navWrapper = document.getElementById("navWrapper");
+let addClass = document.getElementById("addClass");
+let removeClass = document.getElementById("removeClass");
+let open_manue = document.getElementById("open_manue");
+let nav__bar = document.getElementById("nav__bar");
+
+let close_manue = document.getElementById("close_manue");
+
+let exampleModal = document.getElementById("exampleModal");
+
+addClass.onclick = function () {
+  navWrapper.classList.add("nav__items-wrapper-active");
+};
+
+nav__bar.onclick = function () {
+  navWrapper.classList.add("nav__items-wrapper-active");
+};
+
+removeClass.onclick = function () {
+  navWrapper.classList.remove("nav__items-wrapper-active");
+};
+
+open_manue.onclick = function () {
+  exampleModal.style.display = "block";
+};
+close_manue.addEventListener("click", function () {
+  exampleModal.style.display = "none !important";
+});
