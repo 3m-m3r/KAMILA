@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/theme.css">
 </head>
 
 <body>
@@ -87,7 +88,7 @@
         }
 
         body {
-            background: var(--Light-Grey, #f5fafb);
+            background: var(--color-bg);
         }
 
         section.auth-modal.active {
@@ -96,15 +97,15 @@
 
 
         button#login-button {
-            background: #19dace;
+            background: var(--color-primary);
         }
 
         .auth-modal__form .auth-form__footer button:not(.btn) {
-            color: #19dace;
+            color: var(--color-primary);
         }
 
         .auth-modal__form .auth-form nav button.active:before {
-            background-color: #19dace;
+            background-color: var(--color-primary);
             height: 4px;
         }
 
@@ -122,12 +123,12 @@
             width: 200px;
             border-radius: 10px;
             font-size: x-large;
-            color: #19dace;
+            color: var(--color-primary);
         }
 
         h2.Lorem {
             margin: 5vh 0;
-            color: #19dace;
+            color: var(--color-primary);
             font-size: xx-large;
             position: relative;
             padding: 0 30px;
@@ -140,7 +141,7 @@
             top: 0;
             height: 100%;
             width: 5px;
-            background: #19dace;
+            background: var(--color-primary);
         }
     </style>
 </body>

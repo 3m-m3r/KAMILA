@@ -7,12 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/theme.css">
 </head>
 
 <body>
 
 
-    <header id="header"></header>
+
 
 
     <section class="collections information">
@@ -92,10 +93,11 @@
                             </div>
 
 
-                            <h5 class="fw-semibold mb-1"><span class="text-white">Order Summary</span> <svg
-                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="tabler-icon tabler-icon-info-octagon">
+                            <h5 class="fw-semibold mb-1"><span class="text-white" style="color: white !important;">Order
+                                    Summary</span> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"
+                                    class="tabler-icon tabler-icon-info-octagon">
                                     <path
                                         d="M12.802 2.165l5.575 2.389c.48 .206 .863 .589 1.07 1.07l2.388 5.574c.22 .512 .22 1.092 0 1.604l-2.389 5.575c-.206 .48 -.589 .863 -1.07 1.07l-5.574 2.388c-.512 .22 -1.092 .22 -1.604 0l-5.575 -2.389a2.036 2.036 0 0 1 -1.07 -1.07l-2.388 -5.574a2.036 2.036 0 0 1 0 -1.604l2.389 -5.575c.206 -.48 .589 -.863 1.07 -1.07l5.574 -2.388a2.036 2.036 0 0 1 1.604 0z">
                                     </path>
@@ -169,7 +171,7 @@
         </div>
     </section>
 
-    <script src="../script/app.js"></script>
+
 
     <style>
         ._grid {
@@ -180,15 +182,15 @@
         }
 
         section.collections.information {
-            background: #f5fafb;
+            background: var(--color-bg);
         }
 
         body {
-            background: #f5fafb;
+            background: var(--color-bg);
         }
 
         .order-summery.info-right {
-            background: #19dace;
+            background: var(--color-primary);
             color: white;
         }
 
@@ -199,13 +201,33 @@
 
         .bg {
             height: 100vh;
-            background: #19dace;
+            background: var(--color-primary);
+        }
+
+        .Data_,
+        .bg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h5.fw-semibold.mb-1 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
         }
 
         @media screen and (max-width:992px) {
             ._grid {
                 display: block;
             }
+
+            .btns.mb-4 {
+                display: none !important;
+
+            }
+
         }
     </style>
 

@@ -3435,7 +3435,7 @@ details summary::-webkit-details-marker {
 
 .filter-button[data-v-175bb05a] {
   background: #ff6a18;
-  color: #f5fafb;
+  color:  var( --color-bg );
   margin-bottom: 10px;
 }
 
@@ -4334,7 +4334,7 @@ input[data-v-0228f334]::-webkit-outer-spin-button {
 
 @media screen and (max-width: 1279px) {
   .set-height[data-v-0b49efb8] {
-    background-color: #f5fafb !important;
+    background-color:  var( --color-bg ) !important;
     max-height: 250px !important;
     max-width: 100%;
     min-height: 250px;
@@ -4370,7 +4370,7 @@ input[data-v-0228f334]::-webkit-outer-spin-button {
   }
 
   .express[data-v-0b49efb8] {
-    background-color: #f5fafb;
+    background-color:  var( --color-bg );
   }
 
   .set-height[data-v-0b49efb8] {
@@ -6909,7 +6909,7 @@ body.has-overflow:before {
 }
 
 .cookie-box .always-active-txt {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 20px;
   color: #9ba5be;
   font-family: Mont-Regular, sans-serif;
@@ -6980,7 +6980,7 @@ body.has-overflow:before {
 }
 
 .compare-products__box .close {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 50%;
   height: 30px;
   top: -15px;
@@ -7647,7 +7647,7 @@ body.has-overflow:before {
 }
 
 .compare-products__table .compare-products__table-item.active {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   width: -moz-max-content;
   width: max-content;
 }
@@ -9021,7 +9021,7 @@ body.has-overflow:before {
 }
 
 .more-options .wishlist__list-item-qty button {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .more-options .wishlist__list-item-qty span {
@@ -10105,7 +10105,7 @@ body.has-overflow:before {
 }
 
 #cart .info-wrapper .info-container .item-remove-icon svg {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 50px;
   height: 25px;
   padding: 5px;
@@ -10229,7 +10229,7 @@ body.has-overflow:before {
 }
 
 #cart .info-wrapper .info-container .res-info {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 20px;
   color: #297f92;
   display: flex;
@@ -10606,7 +10606,7 @@ body.has-overflow:before {
 }
 
 #cart .grandtotal-col {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 15px;
   bottom: 0;
   color: #6e768c;
@@ -11185,7 +11185,7 @@ body.has-overflow:before {
 }
 
 .value-widget .value-card {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -12567,7 +12567,7 @@ body.has-overflow:before {
 
 .header .space {
   align-items: center;
-  background: #f5fafb;
+  background:  var( --color-bg );
   border: 2px solid #fff;
   border-radius: 400px;
   cursor: pointer;
@@ -12894,8 +12894,8 @@ button {
 }
 
 .btn--toggle {
-  background-color: #f5fafb;
-  border: 1px solid #f5fafb;
+  background-color:  var( --color-bg );
+  border: 1px solid  var( --color-bg );
   height: 40px;
   width: 40px;
 }
@@ -14533,7 +14533,7 @@ button {
 }
 
 .default {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .default.why-al-marwan {
@@ -15868,7 +15868,7 @@ button {
 }
 
 .slider {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding: 100px 0;
 }
 
@@ -16381,7 +16381,7 @@ button {
 }
 
 .why-us {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .latest-news .why-us.newsletter:before,
@@ -18906,7 +18906,7 @@ button {
 }
 
 .popular-categories {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   margin: auto;
   padding: 96px 112px;
 }
@@ -19560,7 +19560,7 @@ button {
 }
 
 .new-arrivals .product-container .product-cards .product-image {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   height: 216px;
   max-height: 216px;
   max-width: 385px;
@@ -19987,7 +19987,7 @@ button {
 }
 
 .used-arrivals {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   margin: auto;
   min-height: 922px;
   padding: 96px 0;
@@ -20227,7 +20227,7 @@ button {
 }
 
 .used-arrivals .product-container .product-cards .product-image {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   height: 216px;
   max-height: 216px;
   max-width: 385px;
@@ -20628,7 +20628,7 @@ button {
 }
 
 .trending-products {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   margin: auto;
   min-height: 780px;
   padding: 96px 112px;
@@ -21041,7 +21041,7 @@ button {
 }
 
 .section-services {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding: 72px 0;
 }
 
@@ -22285,7 +22285,7 @@ button {
 
 .search-wrapper .sub-categories .custom-scrollbar {
   overflow-x: scroll;
-  scrollbar-color: #9ba5be #f5fafb;
+  scrollbar-color: #9ba5be  var( --color-bg );
   scrollbar-width: thin;
 }
 
@@ -22299,7 +22299,7 @@ button {
 }
 
 .search-wrapper .sub-categories .custom-scrollbar::-webkit-scrollbar-track {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .search-wrapper .sub-categories .mobile-scroll a h5 {
@@ -24544,7 +24544,7 @@ button {
 }
 
 .sidebar-nav {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 20px;
   padding: 46px 26px;
   width: 350px;
@@ -25232,11 +25232,11 @@ button {
 
 .single-page--offer-confirmation,
 .single-page--payment-page {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .single-page--maintenance-page {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding-bottom: 0;
   padding-top: 0;
 }
@@ -25303,7 +25303,7 @@ button {
 }
 
 .single-page--shopping-cart {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding: 20px 0 130px;
 }
 
@@ -25355,7 +25355,7 @@ button {
 }
 
 .auth-modal {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   height: 100%;
 
   overflow: auto;
@@ -26466,7 +26466,7 @@ button {
 }
 
 .label__contact {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 40px;
   color: #04aab8;
   cursor: pointer;
@@ -26672,7 +26672,7 @@ button {
 }
 
 .page-filter {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   flex-shrink: 0;
   height: 100%;
   min-height: 100vh;
@@ -26996,7 +26996,7 @@ button {
 }
 
 .page-filter__list .page-filter__list-item .noUi-target .noUi-handle {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border: 2px solid #132528;
   border-radius: 50%;
   height: 18px;
@@ -27410,7 +27410,7 @@ button {
 }
 
 .recommended-section {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding: 60px 0 30px 144px;
 }
 
@@ -27558,7 +27558,7 @@ button {
 }
 
 .recently-viewed-product-section {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding: 10px 0 10px 144px;
 }
 
@@ -28378,7 +28378,7 @@ button {
 }
 
 .product-item__thumbnail {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 14px;
   flex-shrink: 0;
   height: 248px;
@@ -31300,7 +31300,7 @@ button {
 
 .prod-detail-page .express-box {
   align-items: center;
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border: none;
   display: flex;
   height: auto;
@@ -31361,7 +31361,7 @@ button {
 .prod-detail-page .active-box,
 .prod-detail-page .active-box-border,
 .prod-detail-page .cart-box:hover {
-  background: var(--light-green-bg, #f5fafb) !important;
+  background: var(--light-green-bg,  var( --color-bg )) !important;
 }
 
 .prod-detail-page .active-box-border {
@@ -31370,7 +31370,7 @@ button {
 
 .prod-detail-page .disabled-btn {
   background: #cbd7db;
-  color: #f5fafb;
+  color:  var( --color-bg );
 }
 
 .prod-detail-page .active-btn {
@@ -31697,7 +31697,7 @@ button {
 }
 
 .category-nav-page .dropdown--sort {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   position: relative;
 }
 
@@ -32596,7 +32596,7 @@ button {
 }
 
 .search-result-page .single-product-name:hover {
-  background: #f5fafb;
+  background:  var( --color-bg );
 }
 
 .search-result-page .tab-filters {
@@ -32967,7 +32967,7 @@ button {
 }
 
 .search-results li:hover {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .category-widget {
@@ -33699,7 +33699,7 @@ button {
 }
 
 .category-widget__tabs .dropdown-search__list li:hover {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .category-widget__tabs .input span {
@@ -33816,7 +33816,7 @@ button {
 }
 
 .dropdown__items {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 0 0 20px 20px;
   display: none;
   margin: 20px 0 0;
@@ -34880,7 +34880,7 @@ button {
   .item-col
   .info-wrapper
   .offer-pill {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 20px;
   color: #297f92;
   font-family: Mont-Regular, serif;
@@ -36265,7 +36265,7 @@ button {
 }
 
 .page-sidebar {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 20px;
   min-height: 100vh;
   padding: 38px 30px;
@@ -37273,7 +37273,7 @@ button {
 
 @media screen and (max-width: 767px) {
   .latest-news {
-    background-color: #f5fafb;
+    background-color:  var( --color-bg );
     padding: 80px 0 64px 16px;
   }
 
@@ -38024,7 +38024,7 @@ button {
   .prod-thumbnail
   .item-remove-icon
   svg {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 50px;
   height: 25px;
   padding: 5px;
@@ -38064,7 +38064,7 @@ button {
   .status-col
   .sku-tag
   span {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 15px;
   color: #132528;
   margin: auto;
@@ -38267,7 +38267,7 @@ button {
   .item.price-col
   .price-box {
   align-items: center;
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border: 1px solid #dae7ea;
   border-radius: 10px;
   display: flex;
@@ -38395,7 +38395,7 @@ button {
   .cart-item-info
   .item.percentage-select
   .percentage-box__item.selected {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border: 2px solid #04aab8;
 }
 
@@ -39896,7 +39896,7 @@ button {
 }
 
 .trip-estimation-info {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 15px;
   margin: auto;
   padding: 15px;
@@ -40580,7 +40580,7 @@ button {
 
 .advantages-wrapper,
 .bg-light-green {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .mt-12 {
@@ -41768,7 +41768,7 @@ button {
 }
 
 .table .bg-dark-gray {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
 }
 
 .table .link,
@@ -42842,7 +42842,7 @@ button {
 }
 
 .contact .almarwan-head-offic .all-sections {
-  background: var(--light-green-bg, #f5fafb);
+  background: var(--light-green-bg,  var( --color-bg ));
   border-radius: 20px;
   display: flex;
   height: 325px;
@@ -43315,7 +43315,7 @@ button {
 
 .cat-info-container {
   align-items: flex-start;
-  background: var(--Light-Grey, #f5fafb);
+  background: var(--Light-Grey,  var( --color-bg ));
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -44221,7 +44221,7 @@ button {
 }
 
 .landing .financing {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   margin-bottom: -50px;
   min-height: 764px;
   padding: 32px 0 0;
@@ -44980,7 +44980,7 @@ button {
 }
 
 .landing .summersale-placeholder a {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   display: flex;
   justify-content: center;
   width: 100%;
@@ -45106,7 +45106,7 @@ button {
 }
 
 .products__main .page-header .cat-wrapper .dropdown {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   width: 160px;
 }
 
@@ -45460,7 +45460,7 @@ button {
 }
 
 .wishlist__list-item .remove-item-cta {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 50%;
   height: 30px;
   margin: 0;
@@ -45734,7 +45734,7 @@ button {
 }
 
 .wishlist__list-item-qty span {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-left: 1px solid #6e768c;
   border-right: 1px solid #6e768c;
   color: #132528;
@@ -45869,7 +45869,7 @@ button {
 }
 
 .account__sidebar {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   padding: 20px 40px;
   width: 385px;
 }
@@ -46358,7 +46358,7 @@ button {
 }
 
 .account__wrapper .upcoming-payments .outer-wrapper {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   border-radius: 20px;
   padding: 45px;
 }
@@ -46763,7 +46763,7 @@ button {
 }
 
 .account__main.single-offer {
-  background: #f5fafb;
+  background:  var( --color-bg );
 }
 
 .account__form h3 {
@@ -47824,7 +47824,7 @@ button {
 }
 
 .account .offer-box__info div .img-placeholder .preview-pdf {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   text-align: center;
 }
 
@@ -48719,7 +48719,7 @@ button {
 .finance__incomplete .incomplete-btn .app-btn {
   background: #ff6a18;
   border-radius: 20px;
-  color: var(--light-grey, #f5fafb);
+  color: var(--light-grey,  var( --color-bg ));
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -48739,7 +48739,7 @@ button {
 }
 
 .finance__display {
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -49426,7 +49426,7 @@ button {
 }
 
 .finance__applications .accordion__body .payment__table .p-table thead tr {
-  background: #f5fafb;
+  background:  var( --color-bg );
   color: #132528;
 }
 
@@ -50114,12 +50114,12 @@ button.btn.btn--categories.header-search {
   cursor: pointer;
   height: 48px;
   width: 48px;
-  background: #f5fafb;
+  background:  var( --color-bg );
   border-radius: 50%;
 }
 
 a.nuxt-link-active strong {
   font-size: x-large;
   letter-spacing: 5px;
-  color: #19dace;
+  color:  var(   --color-primary );
 }

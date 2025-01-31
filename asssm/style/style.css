@@ -7801,7 +7801,7 @@ section {
 }
 
 .cart table tbody td {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   font-size: 20px;
   padding: 20px;
   color: black !important;
@@ -7832,7 +7832,7 @@ section {
 }
 
 .cart .order-summery {
-  background-color: #f5fafb;
+  background-color:  var( --color-bg );
   margin-top: 40px;
   border-radius: 12px;
   padding: 20px;
@@ -7930,7 +7930,7 @@ section {
 .information .form-control:focus,
 .information .form-select:focus {
   box-shadow: none;
-  border-color: #19dace;
+  border-color:  var(   --color-primary );
   background-color: #f6f8f9;
 }
 
@@ -7954,7 +7954,7 @@ section {
 }
 
 .information .payment-card.active {
-  border-color: #19dace;
+  border-color:  var(   --color-primary );
   background-color: #000;
 }
 
@@ -7972,7 +7972,7 @@ section {
 
 .info-right .order-img {
   padding: 12px;
-  border: 1px dashed #f5fafb;
+  border: 1px dashed  var( --color-bg );
   border-radius: 8px;
   position: relative;
 }
@@ -25209,7 +25209,7 @@ svg.closeicon {
 }
 
 .info-left {
-  background: #f5fafb !important;
+  background:  var( --color-bg ) !important;
 }
 
 input {
@@ -25223,7 +25223,7 @@ input {
 }
 
 .information .info-left .btns span {
-  background: #19dace;
+  background:  var(   --color-primary );
 }
 
 h4.fw-semibold.text-white.text-center.mb-4 {
@@ -25232,15 +25232,15 @@ h4.fw-semibold.text-white.text-center.mb-4 {
 
 span.bg-primary.text-black {
   color: white;
-  background: #f5fafb !important;
+  background:  var( --color-bg ) !important;
 }
 
 .btns.mb-4 {
-  background: #19dace !important;
+  background:  var(   --color-primary ) !important;
 }
 
 a.py-3.px-3.px-lg-5.bg-primary.rounded-4.fw-semibold.text-black {
   color: white !important;
-  background: #19dace !important;
+  background:  var(   --color-primary ) !important;
   border-radius: 30px !important;
 }
