@@ -13,13 +13,14 @@
         <div class="auth-modal__form h-fit overflow-scroll">
             <div class="wrapper h-fit">
                 <div class="auth-form">
-                    <button class="modal-logo"><a href="/" class="nuxt-link-active logo--symbol">
-
-                            mero
-                        </a>
 
 
-                    </button>
+
+                    <h2 class="Lorem">Register
+
+                        <br>
+                        ipsum dolor sit.
+                    </h2>
                     <nav><button id="sign-in-box">
                             Sign In
                         </button> <button id="register-box" class="active">Register
@@ -33,12 +34,14 @@
 
                                 <div class="input-placeholder flex align-items--center position--relative">
 
-                                    <!----> <!----> <input placeholder="Full Name" name="Full_name" type="text"
+                                    <!----> <!----> <input name="Full" placeholder="Full Name" type="text"
                                         class="form__input">
                                 </div>
 
 
+
                                 <div class="input-placeholder flex align-items--center position--relative">
+
                                     <!----> <!----> <input name="Email" placeholder="email" type="email"
                                         class="form__input">
                                 </div>
@@ -51,9 +54,9 @@
 
 
 
-
-
-
+                                <!---->
+                                <div class="forgot-pw"><a>Forgot
+                                        Password?</a></div>
 
 
                                 <div class="auth-form__footer"><button id="login-button" type="submit"
@@ -62,7 +65,9 @@
                                         Sign in
                                         <i class="icon icon--angle"></i></button>
                                     <div><span>Not a customer yet?</span>
-                                        <button> Register</button>
+                                        <button> <a href="./Sign_In.html">
+                                                Sign In
+                                            </a></button>
                                     </div>
                                 </div>
                         </form>
@@ -80,13 +85,70 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            background: white;
+
         }
 
         .auth-modal__form.h-fit.overflow-scroll {
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+
+        body {
+            background: var(--Light-Grey, #f5fafb);
+        }
+
+        section.auth-modal.active {
+            background: none !important;
+        }
+
+
+        button#login-button {
+            background: #19dace;
+        }
+
+        .auth-modal__form .auth-form__footer button:not(.btn) {
+            color: #19dace;
+        }
+
+        .auth-modal__form .auth-form nav button.active:before {
+            background-color: #19dace;
+            height: 4px;
+        }
+
+        a.nuxt-link-active.logo--symbol {
+            display: block;
+        }
+
+
+        a.nuxt-link-active.logo--symbol {
+            display: block;
+            background: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 200px;
+            border-radius: 10px;
+            font-size: x-large;
+            color: #19dace;
+        }
+
+        h2.Lorem {
+            margin: 5vh 0;
+            color: #19dace;
+            font-size: xx-large;
+            position: relative;
+            padding: 0 30px;
+        }
+
+        h2.Lorem::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 5px;
+            background: #19dace;
         }
     </style>
 </body>

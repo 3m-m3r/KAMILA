@@ -25490,7 +25490,7 @@ button {
 
 .auth-modal__form {
   align-items: center;
-  background-color: #fff;
+
   height: 100%;
   max-width: 542px;
   min-height: 467px;
@@ -45775,19 +45775,6 @@ button {
   }
 }
 
-.account .page-header {
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 0 0 40px;
-}
-
-@media screen and (max-width: 767px) {
-  .account .page-header {
-    justify-content: flex-start;
-    margin: 0 0 10px;
-  }
-}
-
 .account .page-header h3 {
   display: none;
   margin: 0;
@@ -45908,7 +45895,7 @@ button {
   .account__sidebar {
     height: 100%;
     overflow: auto;
-    padding-bottom: 60px;
+
     padding-top: 20px;
     position: fixed;
     width: 100%;
@@ -46158,13 +46145,6 @@ button {
 .account__wrapper {
   max-width: 858px;
   padding: 0 64px 30px;
-}
-
-@media screen and (max-width: 1279px) {
-  .account__wrapper {
-    padding: 0 44px;
-    padding: 0 14px;
-  }
 }
 
 .account__wrapper--no-padding {
@@ -46947,12 +46927,6 @@ button {
     font: 0.625em/1 Mont-Bold, sans-serif;
     height: 26px;
     width: 70px;
-  }
-
-  .account__form .form__footer {
-    align-items: center;
-    flex-direction: column;
-    flex-direction: column-reverse;
   }
 }
 

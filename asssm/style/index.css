@@ -5972,6 +5972,8 @@ body:not(.rtl) .elementor-996 .elementor-element.elementor-element-7b26a7b .elem
 .elementor-996 .elementor-element.elementor-element-7b26a7b .elementor-icon-list-icon svg {
     fill: var(--e-global-color-primary);
     transition: fill 0.3s;
+    width: 20px !important;
+    height: 20px !important;
 }
 
 .elementor-996 .elementor-element.elementor-element-7b26a7b {
@@ -9658,3 +9660,5 @@ body:not(.rtl) .elementor-996 .elementor-element.elementor-element-7b26a7b .elem
         line-height: var(--e-global-typography-accent-line-height);
     }
 }
+
+
