@@ -5,73 +5,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="stylesheet" href="../style/theme.css">
+    <link rel="stylesheet" href="../style/mero.css">
+    <style>
+        ._contentBlock {
+            display: none;
+        }
 
+        ._active {
+            display: block !important;
+        }
+    </style>
 </head>
 
 <body>
-    <div id="layout">
-        <div data-v-73e54a34="" class="account container">
-            <aside data-v-73e54a34="" id="account__sidebar" class="account__sidebar">
-                <div data-v-73e54a34="" class="account__widget">
-                    <div data-v-73e54a34="" class="profile-section ">
-                        <figure data-v-73e54a34="" class="btn btn--round-outline user-name"><span data-v-73e54a34=""
-                                class="is-bold">A</span></figure>
-                    </div>
-                    <div data-v-73e54a34="" class="user-details">
-                        <h3 data-v-73e54a34="" class="font-mont-bold text-18 text-color-black">Ammar</h3>
-                        <div data-v-06c5ad06="" data-v-73e54a34="">
-                            <div data-v-06c5ad06="">
-                                <div data-v-06c5ad06="" class="flex align-items--center gap-2"><span data-v-06c5ad06=""
-                                        class="label-text text-14">Change picture</span></div>
-                            </div> <input data-v-06c5ad06="" type="file" name="file" style="display: none;">
-                        </div> <!----> <button data-v-73e54a34="" class="link--orange out-btn">Sign out</button>
-                    </div>
-                </div>
-                <div data-v-73e54a34="" class="account__sidebar-nav account__sidebar-nav--disable">
-                    <ul data-v-73e54a34="" class="sf-content-pages__list">
-                        <li data-v-73e54a34="" class="sf-content-pages__list-item sf-list__item"><a data-v-73e54a34=""
-                                href="/customer/my-profile" aria-current="page"
-                                class="sf-content-pages__menu nuxt-link-exact-active nuxt-link-active"><i
-                                    data-v-73e54a34="" class="icon icon--profile"></i>
-                                Personal Data
-                            </a> <!----></li>
-
-
-
-
-                        <li data-v-73e54a34="" class="sf-content-pages__list-item sf-list__item"><a data-v-73e54a34=""
-                                href="/customer/order-history" class="sf-content-pages__menu"><i data-v-73e54a34=""
-                                    class="icon icon--bag"></i>
-                                Orders &amp; Quotes
-                            </a> <!----></li>
-
-
-                        <li data-v-73e54a34="" class="sf-content-pages__list-item sf-list__item"><a data-v-73e54a34=""
-                                href="/customer/order-history" class="sf-content-pages__menu"><i data-v-73e54a34=""
-                                    class="icon icon--bag"></i>
-                                Rent
-                            </a> <!----></li>
-
-
-
-                        <li data-v-73e54a34="" disabled="disabled" class="sf-content-pages__list-item sf-list__item"><a
-                                data-v-73e54a34="" href="/customer/my-maintenance" class="sf-content-pages__menu"><i
-                                    data-v-73e54a34="" class="icon icon--maintenance"></i>
-                                Maintenance Services
-                            </a> <!----></li>
+    <header id="header"></header>
+    <aside id="sidebar_left"></aside>
+    <!--$content -->
+    <div>
+        <section class="collections information">
+            <div class="row">
+                <nav class="col-12">
+                    <ul class="d-flex flex-wrap gap-2 mb-1 list-unstyled align-items-center mb-0 ps-3 pt-3">
+                        <li><a href="/">Home</a></li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-narrow-right">
+                                <path d="M5 12l14 0"></path>
+                                <path d="M15 16l4 -4"></path>
+                                <path d="M15 8l4 4"></path>
+                            </svg>
+                        </li>
+                        <li><a href="collection">Our Collection</a></li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-narrow-right">
+                                <path d="M5 12l14 0"></path>
+                                <path d="M15 16l4 -4"></path>
+                                <path d="M15 8l4 4"></path>
+                            </svg>
+                        </li>
+                        <li><a href="product-details">Product Details</a></li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="tabler-icon tabler-icon-arrow-narrow-right">
+                                <path d="M5 12l14 0"></path>
+                                <path d="M15 16l4 -4"></path>
+                                <path d="M15 8l4 4"></path>
+                            </svg>
+                        </li>
+                        <li><span class="text-white">Cart Payment</span></li>
                     </ul>
+                </nav>
+            </div>
+            <br>
+            <div class="container-fluid grid">
+
+
+
+                <div class="proofile_user">
+
+                    <div class="profile">
+                        <div class="img_profile"></div>
+                        <div class="text_profile">
+                            <h2>Ammar Ahmed</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                            <a href="#">SignUp</a>
+                        </div>
+                    </div>
+
+
+                    <div class="account__sidebar-nav account__sidebar-nav--disable">
+                        <ul class="sf-content-pages__list">
+                            <li class="sf-content-pages__list-item sf-list__item">
+                                <a href="#" onclick="showDiv(event, 'div1')"
+                                    class="sf-content-pages__menu nuxt-link-exact-active nuxt-link-active">
+
+                                    Personal Data
+                                </a> <!---->
+                            </li>
+
+
+
+
+
+                            <li class="sf-content-pages__list-item sf-list__item">
+                                <a href="#" onclick="showDiv(event, 'div2')"
+                                    class="sf-content-pages__menu nuxt-link-exact-active nuxt-link-active">
+
+                                    Orders & Quotes
+                                </a> <!---->
+                            </li>
+
+
+
+
+                            <li class="sf-content-pages__list-item sf-list__item">
+                                <a href="#" onclick="showDiv(event, 'div3')"
+                                    class="sf-content-pages__menu nuxt-link-exact-active nuxt-link-active">
+
+                                    Rent
+                                </a> <!---->
+                            </li>
+
+
+
+
+
+
+                            <li disabled="disabled" class="sf-content-pages__list-item sf-list__item"><a
+                                    href="/customer/my-maintenance" class="sf-content-pages__menu"><i
+                                        class="icon icon--maintenance"></i>
+                                    Maintenance Services
+                                </a> <!----></li>
+                        </ul>
+                    </div>
                 </div>
-            </aside>
-            <div data-v-73e54a34="" class="account__main">
-                <div data-v-311974c8="" data-v-73e54a34="" class="account__wrapper">
-                    <div data-v-311974c8="" class="account__form">
-                        <div data-v-311974c8="" class="account-payments">
-                            <div class="page-header"><button class="mobile-cta"><i
-                                        class="icon icon--angle-bold"></i></button>
+
+                <div class="proofile_data ">
+                    <div class="account__form">
+                        <div class="account-payments">
+                            <div class="page-header">
+
+
                                 <div>
-                                    <h3>My Account</h3>
+
+
+
                                     <h2><strong>My Account</strong></h2>
                                     <nav class="breadcrumb my-account">
                                         <ul>
@@ -88,253 +150,310 @@
                                     </nav>
                                 </div>
                             </div>
-                            <div class="upcoming-payments"><!----></div>
+
                         </div>
-                        <h3 data-v-311974c8="">Personal Data</h3>
-                        <div data-v-8d07084c="" data-v-311974c8="" class="account__form"><span data-v-8d07084c="">
-                                <form data-v-8d07084c="" class="form" data-hs-cf-bound="true">
-                                    <div data-v-8d07084c="" class="form__row">
-                                        <h5 data-v-8d07084c="">Login Details</h5>
-                                        <div data-v-8d07084c="" class="form__group">
-                                            <div data-v-8d07084c="" class="form__group-info">
-                                                <div data-v-8d07084c=""><span data-v-8d07084c="">Email Address</span>
-                                                    <p data-v-8d07084c="">ammar132004@gmail.com</p>
-                                                </div> <button data-v-8d07084c="">Change</button>
+
+
+                        <div class="_contentBlock" id="div1">
+
+                            <h3>Personal Data</h3>
+
+
+                            <form action="#">
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <div class="form__group-info">
+                                            <div>
+                                                <span>Full Name</span>
+                                                <p id="fullName">Ammar Ahmed</p>
                                             </div>
-
-
-
-                                        </div>
-                                    </div>
-                                    <section data-v-8d07084c="" class="sf-modal"><!----> <!----></section>
-                                </form>
-                            </span></div>
-                        <div data-v-1983ba3e="" data-v-311974c8="" class="account__form">
-                            <div data-v-1983ba3e="" class="form__row">
-                                <div data-v-1983ba3e="" class="form__group">
-                                    <div data-v-1983ba3e="" class="form__group-info">
-                                        <div data-v-1983ba3e=""><span data-v-1983ba3e="">Password</span>
-                                            <p data-v-1983ba3e="">********</p>
-                                        </div> <button data-v-1983ba3e="">Change</button>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div> <span data-v-074e0afd="" data-v-311974c8="">
-                            <form data-v-074e0afd="" class="form" data-hs-cf-bound="true">
-                                <div data-v-074e0afd="" class="form__row">
-                                    <h5 data-v-074e0afd="">Contact Details</h5>
-                                    <div data-v-074e0afd="" class="form__group">
-                                        <div data-v-074e0afd="" class="form__group-info">
-                                            <div data-v-074e0afd=""><span data-v-074e0afd="">Full Name</span>
-                                                <p data-v-074e0afd="">Ammar</p>
-                                            </div> <button data-v-074e0afd="">Change</button>
-                                        </div>
-
-
-                                    </div>
-                                    <div data-v-074e0afd="" class="form__group">
-                                        <div data-v-074e0afd="" class="form__group-info">
-                                            <div data-v-074e0afd=""><span data-v-074e0afd="">Phone Number</span>
-                                                <p data-v-074e0afd="">201070479599</p>
-                                            </div> <button data-v-074e0afd="">Change</button>
-                                        </div>
-
-
-                                    </div>
-                                    <div data-v-074e0afd="" class="form__group">
-                                        <div data-v-074e0afd="" class="form__group-info">
-                                            <div data-v-074e0afd=""><span data-v-074e0afd="">City</span>
-                                                <p data-v-074e0afd="">NA</p>
-                                            </div> <button data-v-074e0afd="">Change</button>
-                                        </div>
-
-
-                                    </div>
-                                    <div data-v-074e0afd="" class="form__group">
-                                        <div data-v-074e0afd="" class="form__group-info">
-                                            <div data-v-074e0afd=""><span data-v-074e0afd="">Address</span>
-                                                <p data-v-074e0afd="">NA</p>
-                                            </div> <button data-v-074e0afd="">Change</button>
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                                <div data-v-074e0afd="" class="form__row">
-                                    <h5 data-v-074e0afd="">Account Details</h5>
-                                    <div data-v-074e0afd="" class="form__group">
-                                        <div data-v-074e0afd="" class="form__group-info form__group-info--disabled">
-                                            <div data-v-074e0afd=""><span data-v-074e0afd="">Customer Since</span>
-                                                <p data-v-074e0afd="">29.01.2025</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-v-074e0afd="" class="form__group">
-                                        <div data-v-074e0afd="" class="form__group-info form__group-info--disabled">
-                                            <div data-v-074e0afd=""><span data-v-074e0afd="">Last Login</span>
-                                                <p data-v-074e0afd="">29.01.2025</p>
-                                            </div>
+                                            <button type="button" class="Change"
+                                                onclick="changeField('fullName')">Change</button>
                                         </div>
                                     </div>
                                 </div>
 
-                                <div data-v-074e0afd="" class="form__footer"><button data-v-074e0afd=""
-                                        class="btn--outline">
-                                        Cancel
-                                    </button> <span data-v-074e0afd="" class="btn--orange text-position">
-                                        Save changes
-                                    </span></div>
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <div class="form__group-info">
+                                            <div>
+                                                <span>Phone Number</span>
+                                                <p id="phoneNumber">+201070479599</p>
+                                            </div>
+                                            <button type="button" class="Change"
+                                                onclick="changeField('phoneNumber')">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <div class="form__group-info">
+                                            <div>
+                                                <span>Email Address</span>
+                                                <p id="emailAddress">ammar132004@gmail.com</p>
+                                            </div>
+                                            <button type="button" class="Change"
+                                                onclick="changeField('emailAddress')">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <div class="form__group-info">
+                                            <div>
+                                                <span>City</span>
+                                                <p id="city">Suhag</p>
+                                            </div>
+                                            <button type="button" class="Change"
+                                                onclick="changeField('city')">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <div class="form__group-info">
+                                            <div>
+                                                <span>Address</span>
+                                                <p id="address">Lorem, ipsum dolor.</p>
+                                            </div>
+                                            <button type="button" class="Change"
+                                                onclick="changeField('address')">Change</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="flex_">
+                                    <button type="button" class="Cancel">Cancel</button>
+                                    <button type="button" class="Save_changes" onclick="saveAllChanges()">Save
+                                        changes</button>
+                                </div>
                             </form>
-                        </span>
-                    </div>
-                    <div data-v-b2258694="" data-v-73e54a34="" class="account__wrapper" style="display: none;">
-                        <div data-v-b2258694="" class="account-payments">
-                            <div class="page-header"><button class="mobile-cta"><i
-                                        class="icon icon--angle-bold"></i></button>
-                                <div>
-                                    <h3>My Account</h3>
-                                    <h2><strong>My Account</strong></h2>
-                                    <nav class="breadcrumb my-account">
-                                        <ul>
-                                            <li><a href="/" class="nuxt-link-active">Home</a></li>
-                                            <li><a href="/customer/order-history" aria-current="page"
-                                                    class="nuxt-link-exact-active nuxt-link-active"><span>Account</span></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                            <div class="upcoming-payments"><!----></div>
-                        </div>
-                        <div data-v-b2258694="" class="offers">
-                            <div data-v-b2258694="" class="container">
-                                <div data-v-b2258694="" class="section-header">
-                                    <div data-v-b2258694="" class="section-header__title">
-                                        <h3 data-v-b2258694="">My Orders</h3>
-                                    </div>
-                                    <div data-v-b2258694="" class="section-header__nav">
-                                        <ul data-v-b2258694="">
-                                            <li data-v-b2258694=""><button data-v-b2258694="" class="">
-                                                    Orders
-                                                </button></li>
-                                            <li data-v-b2258694=""><button data-v-b2258694="" class="">
-                                                    Quotes
-                                                </button></li>
-                                            <li data-v-b2258694=""><button data-v-b2258694="" class="active">
-                                                    Inquiries
-                                                </button></li>
-                                        </ul>
-                                    </div> <!----> <!---->
 
-                                    <div data-v-b2258694="">
-                                        <div data-v-b2258694="">
-                                            <div class="account__wrapper">
-                                                <div class="offers">
-                                                    <div class="container">
-                                                        <div class="section-header">
-                                                            <div><!---->
-                                                                <div class="test">
-                                                                    <div class="offer-box">
-                                                                        <div class="left">
-                                                                            <figure>
-                                                                                <picture>
-                                                                                    <source type="image/webp"
-                                                                                        srcset="/_ipx/w_320,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 320w, /_ipx/w_640,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 640w, /_ipx/w_768,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 768w, /_ipx/w_1024,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1024w, /_ipx/w_1280,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1280w, /_ipx/w_1536,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1536w, /_ipx/w_1536,f_webp/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1536w"
-                                                                                        sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1536px) 1536px, 1536px">
-                                                                                    <img src="/_ipx/w_1536,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png"
-                                                                                        srcset="/_ipx/w_320,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 320w, /_ipx/w_640,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 640w, /_ipx/w_768,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 768w, /_ipx/w_1024,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1024w, /_ipx/w_1280,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1280w, /_ipx/w_1536,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1536w, /_ipx/w_1536,f_png/https://assets.almarwan.com/media/catalog/product/cache/0942b4acbd90da5d18670a76696928f9/s/i/sinoboom_tb20j_plus_telescopic_boom_lift_white_background_2.png 1536w"
-                                                                                        sizes="(max-width: 320px) 320px, (max-width: 640px) 640px, (max-width: 768px) 768px, (max-width: 1024px) 1024px, (max-width: 1280px) 1280px, (max-width: 1536px) 1536px, 1536px"
-                                                                                        alt="item" loading="lazy">
-                                                                                </picture>
-                                                                            </figure>
-                                                                            <h3><a href="/p/RNT096/diesel-telescopic-boom-lifts-16-to-43-6-meter.html"
-                                                                                    class="">
-                                                                                    Diesel Telescopic Boom Lifts 16 to
-                                                                                    43.6 meter
-                                                                                </a> <span
-                                                                                    class="offer-box__status offer-box__status--accepted">For
-                                                                                    Sale</span></h3>
-                                                                        </div>
-                                                                        <div class="offer-box__info">
-                                                                            <div>
-                                                                                <h6>Comment</h6> <span>
-                                                                                    no contact
-                                                                                </span>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div
-                                                                    class="pagination-account-area flex justify-center">
-                                                                    <!---->
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                            <script>
+                                function changeField(fieldId) {
+                                    var p = document.getElementById(fieldId);
+                                    var currentValue = p.textContent;
+                                    p.innerHTML = `<input type="text" value="${currentValue}" id="input_${fieldId}" />`;
+                                    var button = p.nextElementSibling;
+                                    button.textContent = 'Save';  // Change button text to 'Save'
+                                    button.setAttribute('onclick', `saveField('${fieldId}')`);  // Change button onclick to save the field
+                                }
+
+                                function saveField(fieldId) {
+                                    var input = document.getElementById('input_' + fieldId);
+                                    var newValue = input.value;
+                                    var p = document.getElementById(fieldId);
+                                    p.textContent = newValue;
+                                    var button = p.nextElementSibling;
+                                    button.textContent = 'Change';  // Change the button text back to 'Change'
+                                    button.setAttribute('onclick', `changeField('${fieldId}')`);  // Set button to trigger 'Change' on click
+                                }
+
+                                function saveAllChanges() {
+                                    var fields = ['fullName', 'phoneNumber', 'emailAddress', 'city', 'address'];
+                                    fields.forEach(function (field) {
+                                        var input = document.getElementById('input_' + field);
+                                        if (input) {
+                                            var newValue = input.value;
+                                            var p = document.getElementById(field);
+                                            p.textContent = newValue;
+                                        }
+                                        var button = document.querySelector(`#${field} + .Change`);
+                                        button.textContent = 'Change';  // Change button to 'Change' after saving
+                                        button.setAttribute('onclick', `changeField('${field}')`);  // Ensure the button still calls changeField
+                                    });
+
+                                    alert("All changes have been saved!");
+                                }
+                            </script>
+                        </div>
+
+
+
+                        <div class="_contentBlock" id="div2">
+                            <h3>Orders & Quotes</h3>
+
+                            <br>
+                            <br>
+
+
+                            <div class="overflow-x-auto">
+                                <table class="w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Product</th>
+                                            <th>Rental Price</th>
+                                            <th>Quantity</th>
+                                            <th>Subtotal</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="text-white d-flex gap-3 align-items-center">
+                                                <img alt="" loading="lazy" width="100" height="90" decoding="async"
+                                                    data-nimg="1" style="color: transparent"
+                                                    src="../img/collection-1.png">15 Ton Excavator
+                                            </td>
+                                            <td class="overflow-hidden">$<!-- -->1110</td>
+                                            <td>
+                                                <div class="item">
+                                                    <div class="d-flex align-items-center">
+
+                                                        <span
+                                                            class="d-inline-flex text-white px-2 product-count fixed-width">1</span>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                            </td>
+                                            <td>$<!-- -->1100</td>
+                                            <td>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="closeicon">
+                                                    <path d="M18 6l-12 12"></path>
+                                                    <path d="M6 6l12 12"></path>
+                                                </svg>
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
                             </div>
+
+
+
+
+
                         </div>
+
+
+
+
+
+
                     </div>
-                </div>
-
-            </div> <!---->
-        </div>
+        </section>
     </div>
-
-
-
-
+    <!--/$-->
+    <aside id="bottom_bar"></aside>
+    <script src="../script/app.js"></script>
 
     <style>
-        .form__group-info {
-            align-items: center;
-            justify-content: space-between;
-
+        .container-fluid.grid {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 50px;
         }
 
-        .form__footer {
-            gap: 20px;
-        }
 
-        span.btn--orange.text-position {
+        .profile {
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 20px;
+            padding: 10px;
+            background: #232627;
+            border-radius: 10px;
+            font-size: medium;
         }
 
-        span.label-text.text-14 {
-            color: black;
+        .profile h2 {
+            font-size: large;
+        }
+
+
+        .img_profile {
+            height: 66px;
+            width: 66px;
+            border-radius: 50%;
+            background: black;
+        }
+
+
+        .account__sidebar-nav.account__sidebar-nav--disable {
+            margin: 5vh 0;
+            line-height: 3;
+            list-style: none;
+        }
+
+        .form__group-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 0;
+            border-bottom: 1px solid #242627;
         }
 
 
 
+        nav.breadcrumb.my-account ul {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
+        button.Change {
+            background: none;
+            border: none;
+            color: white;
+            background: #252425;
+            padding: 3px 15px;
+            border-radius: 30px;
+            border: 3px solid #313131;
+            font-size: smaller;
+        }
 
-        @media screen and (max-width:992px) {
-            ul.sf-content-pages__list {
-                display: none;
-            }
+        button.Cancel {
+            background: no-repeat;
+            border: navajowhite;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 30px;
+            border: 1px solid #242627;
+        }
 
-            aside#account__sidebar {
-                width: 100%;
-            }
+        button.Save_changes {
+            background: #242627;
+            border: none;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 30px;
+            /* border: 1px solid #242627; */
+        }
 
-            .account.container {
-                display: block;
-            }
-
-            aside#account__sidebar {
-                height: auto;
-                position: relative;
-            }
+        .flex_ {
+            margin: 3vh 0;
         }
     </style>
+
+
+
+
+
+    <script>
+        function showDiv(event, divId) {
+            event.preventDefault();
+            const divs = document.querySelectorAll("._contentBlock");
+            divs.forEach(div => div.classList.remove("_active"));
+
+            const selectedDiv = document.getElementById(divId);
+            if (selectedDiv) {
+                selectedDiv.classList.add("_active");
+                localStorage.setItem("_activeDiv", divId);
+            }
+        }
+
+        window.onload = function () {
+            const _activeDivId = localStorage.getItem("_activeDiv") || "div1";
+            document.getElementById(_activeDivId)?.classList.add("_active");
+        };
+    </script>
+
 </body>
 
 </html>
