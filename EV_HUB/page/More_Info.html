@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/maincopy.css">
+</head>
+
+<body>
+
+
+    <main class="dashboard _contentBlock active" id="div4">
+        <section class="stations-list">
+            <div class="stations-list__title">
+                <h2>Stations list</h2>
+                <div>
+                    <h3 class="gradient-1" onclick="filterItems('rent')">Rent</h3>
+                    <h3 class="gradient-2" onclick="filterItems('quotes')">Quotes</h3>
+                    <h3 class="gradient-3" onclick="filterItems('maintenance')">Maintenance Services</h3>
+                    <h3 onclick="filterItems('all')">All</h3>
+                </div>
+            </div>
+            <ul>
+                <li class="item-station" data-category="rent">
+                    <div data-row-1="true">
+                        <div><img src="./img/collection-7.png" alt="Tesla Station">
+                            <div>
+                                <h4>4.8</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Tesla Station</h3>
+                            <br>
+                            <h4>Ports Available</h4>
+                        </div>
+                    </div>
+                    <div data-row-3="true">
+                        <div>
+                            <h3>Day ( 7 )</h3>
+                        </div>
+                        <div>
+                            <h3>Price ( 200 $ )</h3>
+                        </div>
+                    </div>
+                    <div data-row-4="true">
+                        <button>View Order</button><button>Cancel</button>
+                    </div>
+                </li>
+
+                <li class="item-station" data-category="quotes">
+                    <div data-row-1="true">
+                        <div><img src="./img/collection-7.png" alt="Tesla Station">
+                            <div>
+                                <h4>4.8</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Tesla Station</h3>
+                            <br>
+                            <h4>Ports Available</h4>
+                        </div>
+                    </div>
+                    <div data-row-3="true">
+                        <div>
+                            <h3>Day ( 7 )</h3>
+                        </div>
+                        <div>
+                            <h3>Price ( 200 $ )</h3>
+                        </div>
+                    </div>
+                    <div data-row-4="true">
+                        <button>View Order</button><button>Cancel</button>
+                    </div>
+                </li>
+
+                <li class="item-station" data-category="maintenance">
+                    <div data-row-1="true">
+                        <div><img src="./img/collection-7.png" alt="Tesla Station">
+                            <div>
+                                <h4>4.8</h4>
+                            </div>
+                        </div>
+                        <div>
+                            <h3>Tesla Station</h3>
+                            <br>
+                            <h4>Ports Available</h4>
+                        </div>
+                    </div>
+                    <div data-row-3="true">
+                        <div>
+                            <h3>Day ( 7 )</h3>
+                        </div>
+                        <div>
+                            <h3>Price ( 200 $ )</h3>
+                        </div>
+                    </div>
+                    <div data-row-4="true">
+                        <button>View Order</button><button>Cancel</button>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <script>
+            function filterItems(category) {
+                document.querySelectorAll('.item-station').forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'flex';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+        </script>
+
+    </main>
+
+
+</body>
+
+</html>
