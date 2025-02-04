@@ -1770,10 +1770,14 @@ body.modal-open {
 }
 .form-control {
   border-color: #2d2d3f;
-  background: #181821;
-  border-radius: 3px;
-  padding: 0.65rem 1rem;
+  background: none !important;
+  border-radius: 5px;
+  padding: 1rem;
   color: #fff !important;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .form-control:focus {
   border-color: #2d2d3f;
@@ -1791,10 +1795,14 @@ body.modal-open {
 }
 .form-select {
   border-color: #2d2d3f;
-  background: #181821;
+  background: none !important;
   color: #9a9cab;
-  border-radius: 3px;
-  padding: 0.65rem 1rem;
+  border-radius: 5px;
+  padding: 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
 }
 .form-check-input {
   background: #1f1f2b;
@@ -2210,8 +2218,8 @@ body.error-page .container {
   font-weight: 500;
 }
 .invoice-table img {
-  width: 35px;
-  height: 35px;
+  width: 80px;
+  height: 80px;
   border-radius: 3px;
 }
 /* .invoice-table a {
