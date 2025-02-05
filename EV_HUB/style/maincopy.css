@@ -1375,11 +1375,7 @@ h6 {
   height: 35px;
   padding: 10px;
 }
-.btn {
-  padding: 8px 20px;
-  border-radius: 3px;
-  font-weight: 500;
-}
+
 .btn-primary,
 .btn-primary.disabled,
 .btn-primary:disabled {
@@ -3443,3 +3439,5 @@ ul.profile-about-list li.profile-about-list-buttons {
     opacity: 1;
   }
 }
+
+
